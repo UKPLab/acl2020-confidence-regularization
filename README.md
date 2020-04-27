@@ -52,7 +52,7 @@ The dataset directory should be structured as the following:
 
 
 ## Running the experiments
-For each evaluation setting, use the `--mode` and `which_bias` arguments to
+For each evaluation setting, use the `--mode` and `--which_bias` arguments to
 set the appropriate loss function and the type of bias to mitigate (e.g, hans, hypo).
 
 To reproduce our result on MNLI ⮕ HANS, run the following:

@@ -92,9 +92,9 @@ Results on the MNLI ⮕ Hard-splits setting:
 
 
 ## Contact
-Contact person: Ajie Utama, utama@ukp.informatik.tu-darmstadt.de
+Contact person: [Ajie Utama](https://www.informatik.tu-darmstadt.de/ukp/ukp_home/staff_ukp/detailseite_mitarbeiter_1_71488.en.jsp), utama@ukp.informatik.tu-darmstadt.de
+
 https://www.ukp.tu-darmstadt.de/
-https://www.tu-darmstadt.de/
 
 Please reach out to us for further questions or if you encounter any issue.
 You can cite this work by the following:

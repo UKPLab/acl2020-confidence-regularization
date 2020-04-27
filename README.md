@@ -6,8 +6,6 @@ In this paper, we address this trade-off by introducing a novel debiasing method
 regularization, which discourage models from exploiting biases while enabling them to receive enough incentive to learn from all the training examples. We evaluate our method on three NLU tasks and show that, in contrast to its predecessors, it improves the performance on out-of-distribution datasets (e.g., 7pp gain on HANS dataset) while maintaining the original in-distribution accuracy.
 
 
-### Code will be released soon!
-
 The repository contains the code to reproduce our work in debiasing NLU models without in-distribution degradation.
 We provide 2 runs of experiment that are shown in our paper:
 1. Debias [MNLI](https://www.nyu.edu/projects/bowman/multinli/paper.pdf) model from syntactic bias and evaluate on 
@@ -62,7 +60,7 @@ To reproduce our result on MNLI ⮕ HANS, run the following:
 ```
 cd src/
 CUDA_VISIBLE_DEVICES=6 python train_distill_bert.py \
-    --output_dir ../checkpoints/hans/bert_smoothed_distill_lr5_epoch3_seed444 \
+    --output_dir ../checkpoints/hans/bert_confreg_lr5_epoch3_seed444 \
     --do_train --do_eval --mode smoothed_distill \
     --seed 444 --which_bias hans
 ```
@@ -71,7 +69,7 @@ For the MNLI ⮕ hard splits, run the following:
 ```
 cd src/
 CUDA_VISIBLE_DEVICES=6 python train_distill_bert.py \
-    --output_dir ../checkpoints/hypo/bert_smoothed_distill_lr5_epoch3_seed444 \
+    --output_dir ../checkpoints/hypo/bert_confreg_lr5_epoch3_seed444 \
     --do_train --do_eval --mode smoothed_distill \
     --seed 444 --which_bias hypo
 ```
@@ -110,3 +108,7 @@ You can cite this work by the following:
   publisher = {Association for Computational Linguistics}
 }
 ```
+
+## Acknowledgement
+The code in this repository is build on the implementation of debiasing method by Clark et al.
+The original version can be found [here](https://github.com/chrisc36/debias) 

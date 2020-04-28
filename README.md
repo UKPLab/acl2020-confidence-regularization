@@ -68,10 +68,10 @@ CUDA_VISIBLE_DEVICES=6 python train_distill_bert.py \
 For the MNLI ⮕ hard splits, run the following:
 ```
 cd src/
-CUDA_VISIBLE_DEVICES=6 python train_distill_bert.py \
-    --output_dir ../checkpoints/hypo/bert_confreg_lr5_epoch3_seed444 \
+CUDA_VISIBLE_DEVICES=10 python train_distill_bert.py \
+    --output_dir ../checkpoints/hypo/bert_confreg_lr5_epoch3_seed111 \
     --do_train --do_eval --mode smoothed_distill \
-    --seed 444 --which_bias hypo
+    --seed 111 --which_bias hypo
 ```
 
 ## Expected results
@@ -80,15 +80,15 @@ Results on the MNLI ⮕ HANS setting:
 
 |Mode|Seed|MNLI-m|MNLI-mm|HANS avg.|
 |-----|----|---|---|---|
-|None|4444|84.57|84.72|62.04|
-|conf-reg|444|84.13|84.66|69.53|
+|None|111|84.57|84.72|62.04|
+|conf-reg|111|84.17|85.02|69.62|
 
 Results on the MNLI ⮕ Hard-splits setting:
 
 |Mode|Seed|MNLI-m|MNLI-mm|MNLI-m hard|MNLI-mm hard|
 |-----|----|---|---|---|---|
-|None|2222|84.62|84.71|76.07|76.75|
-|conf-reg|333|85.01|84.87|78.02|78.89|
+|None|111|84.62|84.71|76.07|76.75|
+|conf-reg|111|85.01|84.87|78.02|78.89|
 
 
 ## Contact

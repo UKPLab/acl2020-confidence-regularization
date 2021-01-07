@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Data
 Our experiments use MNLI dataset version provided by GLUE benchmark.
-Download the file from <a href="https://firebasestorage.googleapis.com/v0/b/mtl-sentence-representations.appspot.com/o/data%2FMNLI.zip?alt=media&token=50329ea1-e339-40e2-809c-10c40afff3ce" target="_blank">here</a>, 
+Download the file from <a href="https://gluebenchmark.com/tasks" target="_blank">here</a>, 
 and unzip under the directory ``./dataset`` 
 Additionally download the following files <a href="https://drive.google.com/drive/folders/1PaWhpJRqPvipsTc1Xp8juISHkYBSOzcL" target="_blank">here</a>
 for evaluating on hard/easy splits of both MNLI dev and test sets.
